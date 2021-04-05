@@ -63,3 +63,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # スクレイピング用
 gem 'mechanize'
+# 株価取得
+gem 'quandl'

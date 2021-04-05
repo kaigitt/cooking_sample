@@ -1,6 +1,21 @@
 <h1>Homes#top</h1>
 <p>Find me in app/views/homes/top.html.erb</p>
-
-<%= @elements.each do |element|%>
-  <%= element %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <% @elements.each.with_index(1) do |element, i|%>
+    <table>
+      <td>
+        <%= i %>
+      </td>
+      <td>
+        <%= link_to element.attr('href') do %><%= element.inner_text %><% end %>
+      </td>
+    </table>
+    <% end %>
+  </div>
+  <div class="row">
+    <%= @elements2.each do |element|%>
+    <%= element %>
+    <% end %>
+  </div>
+</div>
